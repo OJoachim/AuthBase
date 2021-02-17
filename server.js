@@ -25,13 +25,6 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, '/public')));
 
-//app.get('/user/logged', (req, res) => {
-//  res.render('logged');
-//});
-//app.get('/user/no-permission', (req, res) => {
-//  res.render('noPermission');
-//});
-
 app.get('/', (req, res) => {
   res.render('index');
 });
